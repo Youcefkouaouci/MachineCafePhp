@@ -1,8 +1,7 @@
 <?php
 require_once("data.php");
-var_dump($_GET);
+var_dump($_POST);
 ?>
-
 
 <form method="POST" action="confirmBoisson.php">
 
@@ -12,7 +11,7 @@ var_dump($_GET);
         <?php
         foreach ($coffees as $coffee) {
         ?>
-            <option value="<?php $coffee(['title']) ?>"> <?php echo ($coffee["title"]) ?></option>
+            <option value="<?php echo ($coffee['title']) ?>"> <?php echo ($coffee["title"]) ?></option>
         <?php
         }
         ?>
