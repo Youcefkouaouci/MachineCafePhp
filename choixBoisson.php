@@ -5,8 +5,9 @@ var_dump($_GET)
 
 
 <form method="POST" action="confirmBoisson.php">
+    <label for="cafes"> Choose your Coffee</label>
     <select name="title" id="title">
-        <option value="<?php $boisson["nom"] ?>"></option>
+        <option value="<?php $boisson["nom"] ?>"><?php echo $boisson["nom"] ?></option>
     </select>
 </form>
 
