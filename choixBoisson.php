@@ -1,17 +1,17 @@
 <?php
 require_once("data.php");
-var_dump($_POST);
 ?>
 
 <form method="POST" action="confirmBoisson.php">
 
-    <label for="Coffees"> Choose your Coffee</label>
+    <label for="Boissons"> Choose your Coffee</label>
 
-    <select name="title" id="title">
+    <select name="title" id="id">
         <?php
-        foreach ($coffees as $coffee) {
+        foreach ($Boissons as $Boisson) {
         ?>
-            <option value="<?php echo ($coffee['title']) ?>"> <?php echo ($coffee["title"]) ?></option>
+            <option value="<?php echo ($Boisson['title']) ?>"> <?php echo ($Boisson["title"]) ?>
+            </option>
         <?php
         }
         ?>
