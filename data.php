@@ -1,5 +1,5 @@
 <?php
-$cafes = [
+$coffees = [
     [
         "title" => "Espresso",
         "price" => 2.50,
