@@ -15,6 +15,6 @@ require_once("data.php");
         <?php
         }
         ?>
-        <input type="Submit" value="Send">
+        <input type="Submit" value="valider">
     </select>
 </form>
