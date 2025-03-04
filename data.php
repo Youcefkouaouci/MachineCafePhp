@@ -1,5 +1,5 @@
 <?php
-$Boissons = [
+$boissons = [
     [
         "id" => 1,
         "title" => "Espresso",

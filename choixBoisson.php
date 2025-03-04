@@ -1,16 +1,20 @@
 <?php
+require_once("Block/header.php")
+?>
+
+<?php
 require_once("data.php");
 ?>
 
 <form method="POST" action="confirmBoisson.php">
 
-    <label for="Boissons"> Choose your Coffee</label>
+    <label for="Boisson"> Choose your Coffee</label>
 
-    <select name="title" id="id">
+    <select name="boisson" id="id">
         <?php
-        foreach ($Boissons as $Boisson) {
+        foreach ($boissons as $boisson) {
         ?>
-            <option value="<?php echo ($Boisson['title']) ?>"> <?php echo ($Boisson["title"]) ?>
+            <option value="<?php echo ($boisson["title"]) ?>"> <?php echo ($boisson["title"]) ?>
             </option>
         <?php
         }
@@ -18,3 +22,7 @@ require_once("data.php");
         <input type="Submit" value="valider">
     </select>
 </form>
+
+<?php
+require_once("Block/footer.php")
+?>
