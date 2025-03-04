@@ -22,7 +22,7 @@ foreach ($boissons as $boisson) {
     }
 }
 
-if ($boissonfinded = null) {
+if ($boissonfinded == null) {
     header("Location: choixBoisson.php");
     exit();
 }
@@ -43,7 +43,7 @@ if ($sugarChoice < 0 && $sugarChoice > 5) {
 ?>
 <!-- Affichage de la commande "titre boisson" "nombres de sucres" "prix" -->
 <h1>Confirmer votre commande
-    <?php echo ($boissonfinded["titre"]);
+    <?php echo ($boissonfinded["title"]);
     // Afficher le sucre si présent et affiche pluriel/singulier
     if (isset($sugarChoice)) {
         if ($sugarChoice == 0) {
@@ -57,7 +57,7 @@ if ($sugarChoice < 0 && $sugarChoice > 5) {
         }
     }
     ?>
-    <?php echo ($boissonTrouvee["prix"]); ?> €
+    <?php echo ($boissonfinded["price"]); ?> €
 </h1>
 
 
